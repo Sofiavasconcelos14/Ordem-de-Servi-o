@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="index">
+            <div class="cont"><h1>Ordem de Serviço</h1></div>
+            <form action="/enviar" method="POST">
+
+            <div class="cont1">
+                <div class="ino1">
+                    <label>Cliente: <br/><input type="text" name="cliente" /></label>
+                    <label>Rua: <br/><input type="text" name="rua" /></label>
+                    <label>Cidade: <br/><input type="text" name="cidade" /></label>
+                    <label>CPF/CNPJ: <br/><input type="text" name="cpf_cnpj" /></label>
+                </div>
+                <div class="ino2">
+                    <label>DN: </br><input type="text" name="dn" placeholder="__/__/____" /></label><br/>
+                    <label>Nº: </br><input type="text" name="numero" /></label>
+                    <label>CEP: </br><input type="text" name="cep" /></label>
+                    <label>RG: </br><input type="text" name="rg" /></label>
+                </div>
+                <div class="ino3">
+                    <label>Bairro: </br><input type="text" name="bairro" /></label><br/>
+                    <label>Telefones: </br><input type="text" name="telefones" /></label><br/>
+                    <label>Email: </br><input type="email" name="email" /></label>
+                </div>
+            </div>
+            <div class="cont2">
+                <div class="long1">
+                    <div class="section checkboxes">
+                     <strong>Como conheceu:</strong><br/>
+                    <label><input type="checkbox" name="google" /> Google</label>
+                    <label><input type="checkbox" name="instagram" /> Instagram</label>
+                    <label><input type="checkbox" name="facebook" /> Facebook</label>
+                    <label><input type="checkbox" name="e_cliente" /> É cliente</label>
+                    <label><input type="checkbox" name="folder" /> Folder</label>
+                    <label><input type="checkbox" name="radio" /> Rádio</label>
+                    <label><input type="checkbox" name="carro_de_som" /> Carro de som</label>
+                    </div>
+                </div>
+                <div class="long2">
+                    <label>Indicação: </br><input type="text" name="indicacao" /></label><br/>
+                    <label>Outros: </br><input type="text" name="outros" /></label>
+                </div>
+            </div>
+            <div class="cont3">
+                      <div class="section">
+        <label>Selecione os serviços desejados:</label><br/>
+        <select name="servicos" multiple>
+          <% servicos.forEach(servico => { %>
+            <option value="<%= servico %>"></option>
+          <% }); %>
+        </select>
+      </div>
+            </div>
+
+             <div class="cont4"><button type="submit">Gerar PDF</button></div>
+        </div>
+        
+    </form>
+    </div>
+</body>
+</html>

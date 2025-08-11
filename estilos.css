@@ -1,0 +1,146 @@
+.container{
+    height: 1000px;
+    width: 1000px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+}
+
+.index {
+    height: 1000px;
+    width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+
+
+}
+.cont{
+    height: 100px;
+    width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #1f497d;
+}
+.cont1{
+    height: 300px;
+    width: 800px;
+    background-color: #fff;
+    display: flex;
+}
+.ino1{
+    height: 300px;
+    width: 260px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-family:  Arial, sans-serif;
+     margin: 0px 0px 20px 20px;
+}
+.ino2{
+    height: 300px;
+    width: 267px;
+    background-color: #fff;
+    font-family:  Arial, sans-serif;
+   
+}
+.ino3{
+    height: 300px;
+    width: 267px;
+    background-color: #fff;
+    font-family:  Arial, sans-serif;
+}
+.cont2{
+    height: 150px;
+    width: 800px;
+    background-color: #fff;
+    display: flex;
+    
+}
+.long1{
+    height: 150px;
+    width: 500px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0px 0px 20px 20px;
+}
+.long2{
+    height: 150px;
+    width: 300px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0px 0px 20px 20px;
+}
+.checkboxes label {
+      width: auto;
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+.cont3{
+    height: 400px;
+    width: 800px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+.cont4{
+    height: 100px;
+    width: 800px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    button[type="submit"]:hover {
+      background: #163a62;
+    }
+
+    button[type="submit"] {
+      background: #1f497d;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+.section{
+    margin-bottom: 25px;
+}
+    select[multiple] {
+      width: 95%;
+      height: 300px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background: #fefefe;
+      font-size: 13px;
+      overflow-y: scroll;
+      margin: 20px;
+    }
+   label {
+      display: inline-block;
+      margin-bottom: 10px;
+      width: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 65%;
+      padding: 6px;
+      margin-left: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+
+    }
